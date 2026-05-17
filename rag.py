@@ -63,7 +63,7 @@ def process_pdf(file_path):
     print("Loading PDF...")
     pages = load_pdf(file_path)
     
-    print(f"Splitting into chunks...")
+    print("Splitting into chunks...")
     chunks = split_documents(pages)
     print(f"Total chunks: {len(chunks)}")
     

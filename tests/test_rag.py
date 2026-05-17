@@ -26,4 +26,8 @@ def test_environment():
     import langchain
     import chromadb
     import streamlit
-    assert True  # Agar import hua toh pass
+    
+    # Version check karo — ab "used" hai
+    assert langchain.__version__ is not None
+    assert chromadb.__version__ is not None
+    assert streamlit.__version__ is not None
